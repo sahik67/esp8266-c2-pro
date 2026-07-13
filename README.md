@@ -37,9 +37,25 @@ Advanced C2 (Command & Control) framework for ESP8266/NodeMCU with Python listen
 
 ### Arduino IDE Setup
 
+**Option 1: Use Custom Board Manager (Recommended)**
+
+1. Add Custom ESP8266 Board Manager URL:
+   ```
+   https://raw.githubusercontent.com/sahik67/esp8266-c2-pro/main/package_esp8266_c2_index.json
+   ```
+   - File → Preferences → Additional Boards Manager URLs
+
+2. Install ESP8266 boards:
+   - Tools → Board → Boards Manager → "esp8266"
+
+3. Select board:
+   - Tools → Board → ESP8266 Boards → NodeMCU C2 Professional
+
+**Option 2: Use Official Board Manager**
+
 1. Add ESP8266 Board Manager URL:
    ```
-   https://raw.githubusercontent.com/SpacehuhnTech/arduino/main/package_spacehuhn_index.json
+   https://arduino.esp8266.com/stable/package_esp8266com_index.json
    ```
    - File → Preferences → Additional Boards Manager URLs
 
