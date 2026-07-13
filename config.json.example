@@ -1,0 +1,70 @@
+{
+  "server": {
+    "host": "192.168.31.15",
+    "port": 80,
+    "use_mDNS": true,
+    "mDNS_hostname": "nodemcu-c2",
+    "connection_timeout": 10,
+    "max_retries": 3,
+    "retry_delay": 2
+  },
+  "network": {
+    "ssid": "YOUR_WIFI_SSID",
+    "password": "YOUR_WIFI_PASSWORD",
+    "connection_timeout": 30
+  },
+  "security": {
+    "api_key": "CHANGE_THIS_TO_SECURE_RANDOM_KEY",
+    "enable_auth": true,
+    "rate_limit_per_minute": 60,
+    "max_queue_size": 20,
+    "allowed_clients": ["192.168.1.100", "192.168.1.101"],
+    "enable_cors": true,
+    "enable_ip_whitelist": true,
+    "session_timeout": 3600,
+    "max_sessions": 5
+  },
+  "logging": {
+    "enable_serial": true,
+    "log_level": "INFO",
+    "max_history": 100,
+    "enable_detailed_logging": true,
+    "log_command_output": true
+  },
+  "monitoring": {
+    "heartbeat_interval": 10000,
+    "status_update_interval": 30000,
+    "connection_timeout": 10000,
+    "health_check_interval": 60000,
+    "auto_recovery": true,
+    "alert_on_failure": true
+  },
+  "commands": {
+    "enable_dangerous_commands": false,
+    "require_confirmation": true,
+    "auto_clear_on_success": false,
+    "enable_custom_commands": true,
+    "enable_scheduling": true,
+    "enable_batch_execution": true,
+    "enable_templates": true
+  },
+  "advanced": {
+    "enable_telegram_bot": false,
+    "telegram_bot_token": "",
+    "telegram_chat_id": "",
+    "enable_discord_bot": false,
+    "discord_bot_token": "",
+    "discord_channel_id": "",
+    "enable_ota_updates": true,
+    "ota_update_server": "",
+    "enable_backup": true,
+    "backup_interval": 86400,
+    "multiple_devices": false,
+    "devices": []
+  },
+  "statistics": {
+    "enable_usage_tracking": true,
+    "track_command_frequency": true,
+    "track_success_rate": true
+  }
+}

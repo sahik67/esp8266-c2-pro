@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Logs
+*.log
+c2_audit.log
+
+# Config (sensitive)
+config.json
+
+# Arduino
+*.hex
+*.elf
+*.ino.cpp
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Backup
+backups/
+*.bak
